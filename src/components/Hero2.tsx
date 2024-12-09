@@ -6,9 +6,7 @@ export default function Hero2() {
       <div className="container px-5 py-2 mx-auto mt-7">
         {/* Heading Section */}
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-gray-900">
-            Browse The Range
-          </h1>
+          <h1 className="text-2xl font-bold text-gray-900">Browse The Range</h1>
           <p className="leading-relaxed text-base mx-auto sm:w-3/5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -68,4 +66,3 @@ export default function Hero2() {
     </section>
   );
 }
-

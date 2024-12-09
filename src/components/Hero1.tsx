@@ -1,8 +1,7 @@
-
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-export default function Hero() {
+export default function Hero1() {
   return (
     <div className="relative w-full h-[812px]">
       {/* Background Image */}

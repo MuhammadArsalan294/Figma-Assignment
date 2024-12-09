@@ -1,4 +1,3 @@
-
 import { FiSearch } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";

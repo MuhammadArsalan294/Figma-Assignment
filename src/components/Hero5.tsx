@@ -11,12 +11,12 @@ export default function Her05() {
           <h1 className="text-2xl font-bold text-gray-900">#FuniroFurniture</h1>
         </div>
         <Image
-          src="/images/hero5.jpg" 
+          src="/images/hero5.jpg"
           alt="A scenic view of the hero section"
-          layout="responsive" 
-          width={1600} 
-          height={900} 
-          priority 
+          layout="responsive"
+          width={1600}
+          height={900}
+          priority
         />
       </div>
     </div>

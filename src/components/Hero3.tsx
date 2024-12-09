@@ -15,8 +15,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image1.png"
               alt="Syltherine"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Syltherine
@@ -30,8 +31,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image2.jpg"
               alt="Leviosa"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Leviosa
@@ -45,8 +47,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image3.png"
               alt="Lolito"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Lolito
@@ -60,8 +63,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image4.png"
               alt="Respira"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Respira
@@ -77,8 +81,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image5.png"
               alt="Grifo"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Grifo
@@ -92,8 +97,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image6.png"
               alt="Muggo"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Muggo
@@ -107,8 +113,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image7.png"
               alt="Pingky"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Pingky
@@ -122,8 +129,9 @@ export default function Hero03() {
               className="h-64 rounded w-full object-cover object-center mb-6"
               src="/images/Image8.png"
               alt="Potty"
-              width={100}
-              height={100}
+              width={600}
+              height={600}
+              quality={100}
             />
             <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
               Potty
