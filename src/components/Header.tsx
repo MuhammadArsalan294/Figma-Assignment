@@ -3,6 +3,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { MdManageAccounts } from "react-icons/md";
 import Image from "next/image";
+import Link from "next/link";
 export default function Header() {
   return (
     <div>
@@ -18,10 +19,10 @@ export default function Header() {
             <span className="ml-1 text-2xl font-bold">Funiro</span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center font-[500] gap-8 text-[20px] justify-center">
-            <a className="mr-5 hover:text-gray-900">Home</a>
-            <a className="mr-5 hover:text-gray-900">Shop</a>
-            <a className="mr-5 hover:text-gray-900">Block</a>
-            <a className="mr-5 hover:text-gray-900">Contact</a>
+            <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
+            <Link href={"/shop"} className="mr-5 hover:text-gray-900">Shop</Link>
+            <Link href={"/block"} className="mr-5 hover:text-gray-900">Block</Link>
+            <Link href={"/contact"} className="mr-5 hover:text-gray-900">Contact</Link>
           </nav>
           <div className="gap-6 flex font-[500]">
             <MdManageAccounts className="w-6 h-6 cursor-pointer gap-5" />
