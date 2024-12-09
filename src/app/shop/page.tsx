@@ -12,7 +12,7 @@ export default function Shop() {
           alt="Contact Banner"
           width={1440}
           height={800}
-          layout="responsive"git add README.md
+          layout="responsive"
           className="w-full h-auto object-cover"
           priority
         />
