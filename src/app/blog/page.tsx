@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import { RiSearchLine } from "react-icons/ri";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 
 export default function Blog() {

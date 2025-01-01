@@ -7,8 +7,6 @@ import Hero4 from "@/components/Hero4";
 import Her05 from "@/components/Hero5";
 import { Link } from "lucide-react";
 
-import { IoCartOutline } from "react-icons/io5";
-
 export default function Home() {
   return (
     <div>

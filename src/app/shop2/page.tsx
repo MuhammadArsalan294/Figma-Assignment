@@ -89,7 +89,7 @@ const Shop2 = () => {
       badge: "New",
     },
   ];
-/* product secttion */
+  /* product secttion */
   const [visibleProducts, setVisibleProducts] = useState(4);
 
   const handleShowMore = () => {
@@ -250,7 +250,6 @@ const Shop2 = () => {
             </div>
           </div>
         </div>
-        
 
         <div className="min-h-screen p-">
           <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-6">
@@ -269,110 +268,114 @@ const Shop2 = () => {
             </div>
 
             {/* Content Section */}
-            <div className=" justify-center md:justify-center p-10">
-              <p className="text-sm text-gray-600 leading-6">
-                Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn
-                portable active stereo speaker takes the unmistakable look and
-                sound of Marshall, unplugs the chords, and takes the show on the
-                road.
-              </p>
-              <p className="text-sm text-gray-600 leading-6 mt-4">
-                Weighing in under 7 pounds, the Kilburn is a lightweight piece
-                of vintage-styled engineering. Setting the bar as one of the
-                loudest speakers in its class, the Kilburn is a compact,
-                stout-hearted hero with a well-balanced audio which boasts a
-                clear midrange and extended highs for a sound that is both
-                articulate and pronounced. The analogue knobs allow you to
-                fine-tune the controls to your personal preferences while the
-                guitar-influenced leather strap enables easy and stylish travel.
-              </p>
+            <div className="flex justify-center p-10">
+              <div>
+                <p className="text-sm text-gray-600 leading-6">
+                  Embodying the raw, wayward spirit of rock &apos;n&apos; roll,
+                  the Kilburn portable active stereo speaker takes the
+                  unmistakable look and sound of Marshall, unplugs the chords,
+                  and takes the show on the road.
+                </p>
+                <p className="text-sm text-gray-600 leading-6 mt-4">
+                  Weighing in under 7 pounds, the Kilburn is a lightweight piece
+                  of vintage-styled engineering. Setting the bar as one of the
+                  loudest speakers in its class, the Kilburn is a compact,
+                  stout-hearted hero with a well-balanced audio which boasts a
+                  clear midrange and extended highs for a sound that is both
+                  articulate and pronounced. The analogue knobs allow you to
+                  fine-tune the controls to your personal preferences while the
+                  guitar-influenced leather strap enables easy and stylish
+                  travel.
+                </p>
+              </div>
             </div>
 
             {/* Images Section */}
             <div className="flex flex-col md:flex-row justify-center md:gap-6">
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src="/images/shop2sofa5.png"
                   alt="Sofa Image 1"
+                  width={400}
+                  height={100}
                   className="rounded-lg shadow-md w-full"
                 />
               </div>
               <div className="w-full md:w-1/2 mt-4 md:mt-0">
-                <img
+                <Image
                   src="/images/shop2sofa5.png"
                   alt="Sofa Image 2"
+                  width={400}
+                  height={100}
                   className="rounded-lg shadow-md w-full"
                 />
               </div>
             </div>
           </div>
-          <hr className="mt-12"/>
+          <hr className="mt-12" />
           <section className="text-gray-600 body-font">
-      <div className="container px-5 py-8 mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">
-        Related Products
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {allProducts.slice(0, visibleProducts).map((product, index) => (
-            <div key={index} className="relative bg-gray-100 p-4 rounded-lg">
-              <Image
-                src={product.src}
-                alt={product.alt}
-                width={600}
-                height={400}
-                className="rounded w-full object-cover"
-              />
-              {product.discount && (
-                <span className="absolute top-6 left-56 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                  {product.discount}
-                </span>
+            <div className="container px-5 py-8 mx-auto">
+              <h1 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-900">
+                Related Products
+              </h1>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {allProducts.slice(0, visibleProducts).map((product, index) => (
+                  <div
+                    key={index}
+                    className="relative bg-gray-100 p-4 rounded-lg"
+                  >
+                    <Image
+                      src={product.src}
+                      alt={product.alt}
+                      width={600}
+                      height={400}
+                      className="rounded w-full object-cover"
+                    />
+                    {product.discount && (
+                      <span className="absolute top-6 left-56 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                        {product.discount}
+                      </span>
+                    )}
+                    {product.badge && (
+                      <span className="absolute top-6 left-56  bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                        {product.badge}
+                      </span>
+                    )}
+                    <h2 className="text-lg font-medium text-gray-900 mt-4">
+                      {product.title}
+                    </h2>
+                    <p className="text-sm text-gray-600">
+                      {product.description}
+                    </p>
+                    <p className="text-gray-900 font-bold">
+                      {product.price}
+                      {product.oldPrice && (
+                        <span className="text-gray-400 line-through ml-2">
+                          {product.oldPrice}
+                        </span>
+                      )}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              {visibleProducts < allProducts.length && (
+                <div className="flex justify-center mt-6">
+                  <button
+                    onClick={handleShowMore}
+                    className="px-6 py-2 border border-yellow-500 text-yellow-500 font-medium  hover:bg-yellow-100"
+                  >
+                    Show More
+                  </button>
+                </div>
               )}
-              {product.badge && (
-                <span className="absolute top-6 left-56  bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
-                  {product.badge}
-                </span>
-              )}
-              <h2 className="text-lg font-medium text-gray-900 mt-4">
-                {product.title}
-              </h2>
-              <p className="text-sm text-gray-600">{product.description}</p>
-              <p className="text-gray-900 font-bold">
-                {product.price}
-                {product.oldPrice && (
-                  <span className="text-gray-400 line-through ml-2">
-                    {product.oldPrice}
-                  </span>
-                )}
-              </p>
             </div>
-          ))}
+          </section>
+          <hr />
+          <Footer />
         </div>
-        {visibleProducts < allProducts.length && (
-          <div className="flex justify-center mt-6">
-            <button
-              onClick={handleShowMore}
-              className="px-6 py-2 border border-yellow-500 text-yellow-500 font-medium  hover:bg-yellow-100"
-            >
-              Show More
-            </button>
-          </div>
-        )}
-      </div>
-    </section>
-    <hr/>
-    <Footer/>
-        </div>
-        
       </div>
     </div>
   );
 };
 
 export default Shop2;
-
-
-
-
-
-
-
