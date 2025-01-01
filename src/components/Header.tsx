@@ -25,10 +25,12 @@ export default function Header() {
             <Link href={"/contact"} className="mr-5 hover:text-gray-900">Contact</Link>
           </nav>
           <div className="gap-6 flex font-[500]">
+            <Link href={"/product"}>
             <MdManageAccounts className="w-6 h-6 cursor-pointer gap-5" />
+            </Link>
             <FiSearch className="w-6 h-6 cursor-pointer gap-4" />
             <FaRegHeart className="w-6 h-6 cursor-pointer" />
-            <IoCartOutline className="w-8 h-6 cursor-pointer" />
+            <Link href={"/cart"}><IoCartOutline className="w-8 h-6 cursor-pointer" /></Link> 
           </div>
         </div>
       </header>

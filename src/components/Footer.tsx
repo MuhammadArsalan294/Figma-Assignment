@@ -89,6 +89,8 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="text-center text-gray-500 text-sm mt-10">
+          <hr/>
+          <br/>
           © 2023 Funira. All rights reserved.
         </div>
       </div>
